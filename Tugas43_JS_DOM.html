@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+        <meta charset="utf-8" />
+        <title>Tugas43 Javascript - NIOMIC</title>
+ </head>
+ <body>
+    <p>Tugas 43 Click tombol ini untuk History Back & History forward</p><br />
+    <button onclick="goback()">History back </button>
+    <br />
+    <button onclick="goforward()">History Forward</button>
+    <br />
+    <button onclick="gohistory()">History Go</button>
+       <script type="text/javascript">
+        function goback() {
+            window.history.back();
+        }
+        function goforward() {
+            window.history.forward();
+        }
+        function gohistory() {
+            window.history.go(-1);
+        }
+       </script>
+ </body>
